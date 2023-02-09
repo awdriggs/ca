@@ -16,7 +16,10 @@
   {% for row in board %} 
   <div class="row">
     {% for i in  row %}
-    <div class="cell {% if i=="1" %} on {% endif %}"></div>
+    <div class="box">
+      <div class="cell {% if i=="1" %} on {% endif %}">
+      </div>
+    </div>
     {% endfor %}
   </div>
  {% endfor %}
