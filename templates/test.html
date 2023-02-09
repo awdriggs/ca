@@ -9,20 +9,20 @@
 
 {% block header%}
 <h1><a href="{{url_for('home')}}">Cellular Automata</a> - {{num}}</h1>
+<a href="{{url_for('ca', number=num)}}">Standard First Row </a> | <a href="{{url_for('random_seed', number=num)}}">Random First Row</a>
 {% endblock %}
  
 {% block content %}
-
+  <div class="ca-wrap">
   {% for row in board %} 
   <div class="row">
     {% for i in  row %}
-    <div class="box">
       <div class="cell {% if i=="1" %} on {% endif %}">
       </div>
-    </div>
     {% endfor %}
   </div>
  {% endfor %}
+  </div> <!-- end ca wrap -->
 
 {% endblock %}
 

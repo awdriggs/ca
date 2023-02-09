@@ -13,6 +13,11 @@ def home():
 def about():
     return "about"
 
+@app.route('/ca/<int:number>/random')
+def random_seed(number):
+    board = build(number, True) #builds the ca space as a list of rows, each row is a string 
+    return render_template("test.html", num = number, board = board)
+
 @app.route('/ca/<int:number>')
 def ca(number):
     board = build(number, False) #builds the ca space as a list of rows, each row is a string 

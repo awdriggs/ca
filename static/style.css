@@ -8,7 +8,19 @@ h1 {
 }
 
 header {
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  background-color: rgba(57, 255, 20, 0.5);
+  padding: 20px;
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  color: white;
+  width: 335px;
+  height: 100px;
+}
+
+header h1, header a {
+    color: white;
 }
 
 .list ul {
@@ -31,28 +43,35 @@ a{
 a:hover{
   color: #39ff14;
 }
-
-.row {
-  min-width: 500px;
-  width: 100%;
+#content {
+  margin-top: 180px;
 }
 
-.box {
-  width: calc(100% / 49);
-  margin: -2px;
-  /* display: inline-block; */
-  background-color: #fff;
-  position: relative;
+#content h1 {
+  text-align: center;
+}
+
+.ca-wrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.row {
+  width: 1000px;
 }
 
 .cell {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  margin: -2px;
+  display: inline-block;
+  width: 20px;
+  height: 20px; 
+
+  /* height: var(--size); */
+  background-color: #fff;
 }
 
 .on {
   background-color: #000;
 }
+
+

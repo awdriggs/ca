@@ -17,5 +17,7 @@
       {%endfor%}
     </ul>
     </li>
+    <h1 class="surprise"><a href="{{url_for('ca', number=range(0, 256)|random) }}">Random</a></h1>
+
   </main>
 {% endblock %}
